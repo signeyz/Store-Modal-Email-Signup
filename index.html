@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fashion Modal</title>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <!-- LEFT -->
+        <div class="left__wrapper">
+          <div class="left__wrapper-heading">
+            <h2>Get the scoop</h2>
+            <p>on new arrivals exclusive offers.</p>
+            <h3>20% sale</h3>
+            <p>your next order and more</p>
+          </div>
+          <form
+            class="left__input-form"
+            action="https://formspree.io/f/myylblwv"
+            method="POST"
+          >
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="your email"
+              minlength="3"
+              maxlength="25"
+              autocomplete="off"
+              required
+            />
+            <br />
+            <button class="btn" type="submit">submit</button>
+          </form>
+        </div>
+        <!-- RIGHT -->
+        <div class="right__wrapper">
+          <img
+            class="right__wrapper-img"
+            src="https://images.unsplash.com/photo-1472806426350-603610d85659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2100&q=80"
+            alt="model posing in front of car"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
