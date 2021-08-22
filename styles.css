@@ -189,7 +189,7 @@ SECTIONS & CENTER-SECTIONS
 
 .section {
  padding: 5rem; /* this means padding top/bottom but nothing left/right */
- border: 2px solid yellow;
+ /* border: 2px solid yellow; */
 }
 
 .section-center {
