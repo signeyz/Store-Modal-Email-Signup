@@ -163,7 +163,7 @@ BUTTON GLOBALS
 }
 
 .input {
-   border: 1px solid rgb(155, 155, 155);
+   border: 1px solid rgb(220, 220, 220);
    outline: none;
    padding: .6rem;
    border-radius: 4px;
@@ -214,14 +214,20 @@ SECTIONS & CENTER-SECTIONS
    /* border: 2px solid red; */
 }
 
-/* For close button */
-/* position: absolute;
-top: 58px;
- right: -378px;
-z-index: 1;
-height: 15px;
-width: 15px;
-cursor: pointer; */
+.container-gone {
+   display: none;
+}
+
+/* FOR CLOSE BUTTON */
+.close {
+   position: absolute;
+   top: 8px;
+   right: 10px;
+   z-index: 1;
+   height: 15px;
+   width: 15px;
+   cursor: pointer;
+}
 
 /* LEFT */
 .left__wrapper {
@@ -308,6 +314,13 @@ background-position: right 0px bottom 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 10px;
    }
+
+   .close {
+      top: 5px;
+      right: 6px;
+      height: 10px;
+      width: 10px;
+   }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -321,13 +334,19 @@ background-position: right 0px bottom 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 10px;
    }
+
+   .close {
+      top: 5px;
+      right: 6px;
+      height: 10px;
+      width: 10px;
+   }
 }
 
 /* Small devices (landscape phones, less than 768px if set to max-width) */
 @media (min-width: 767.98px) {
 
    .container {
-      display: flex;
       flex-wrap: nowrap;
    }
 
