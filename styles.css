@@ -140,7 +140,7 @@ BUTTON GLOBALS
 
 .btn {
  text-transform: uppercase;
- background:var(--main-btn-background-color);
+ background:rgb(245, 245, 245);
  color: --darkGrey;
  padding: 0.375rem 0.75rem;
  letter-spacing: var(--main-spacing);
@@ -148,7 +148,7 @@ BUTTON GLOBALS
  font-weight: 700;
  -webkit-transition: var(--transition);
  transition: var(--main-transition); 
- font-size: 0.875rem;
+ font-size: 1.4em;
  /* keep in mind for the border I can add a transparent property for the border */
  border: 2px solid var(--white);
  cursor: pointer;
@@ -159,23 +159,26 @@ BUTTON GLOBALS
 
 .btn:hover {
  color: var(--mainWhite);
- background: red;
+ background: rgb(255, 41, 41);
 }
 
 .input {
    border: 1px solid rgb(155, 155, 155);
    outline: none;
-   padding: .4rem;
+   padding: .6rem;
    border-radius: 4px;
    display: inline-block;
    margin: 0 auto;
    margin-bottom: 2rem;
    max-width: 100%;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 input::placeholder {
    color: black; /*Change the placeholder color*/
    opacity: 0.2; /*Change the opacity between 0 and 1*/
+   font-size: 1.6rem;
+   padding: 0 .2rem;
 }
 
 /* 
@@ -203,14 +206,13 @@ SECTIONS & CENTER-SECTIONS
    align-items: center;
    flex-wrap: wrap;
    background-color: #fff;
+   border-radius: 6px;
    /* display: grid;
    grid-template-columns: 1fr 1fr minmax(0, auto); */
-   
-   border: 2px solid red;
+   /* border: 2px solid red; */
 }
 
 /* LEFT */
-
 .left__wrapper {
    background-color: #fff;
    color: #333;
@@ -239,6 +241,8 @@ SECTIONS & CENTER-SECTIONS
 /* RIGHT */
 .right__wrapper-img{
    max-width: 100%;
+   border-top-right-radius: 6px;
+   border-bottom-right-radius: 6px;
 }
 
 /* This is for larget screens */
@@ -266,12 +270,19 @@ background-position: right 0px bottom 0px;
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 280px) {
+   input {
+      width: 14.5rem;
+   }
+   .btn {
+      font-size: 1.4em;
+   }
+
    .left__wrapper-heading h2{
       font-size: 2.2rem;
    }
 
    .left__wrapper-heading h3 {
-      font-size: 2.2rem;
+      font-size: 2.6rem;
       text-transform: lowercase;
    }
 }
