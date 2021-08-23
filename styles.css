@@ -214,6 +214,7 @@ SECTIONS & CENTER-SECTIONS
    /* border: 2px solid red; */
 }
 
+/* THIS HIDES THE CONTAINER ENTIRELY */
 .container-gone {
    display: none;
 }
@@ -227,6 +228,11 @@ SECTIONS & CENTER-SECTIONS
    height: 15px;
    width: 15px;
    cursor: pointer;
+   transition: all .45s ease-in-out;
+}
+
+.close:hover {
+   transform: rotate(0.5turn) scale(1.3);
 }
 
 /* LEFT */
