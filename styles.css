@@ -297,6 +297,7 @@ background-position: right 0px bottom 0px;
 @media (max-width: 280px) {
    input {
       width: 14.5rem;
+      text-align: center;
    }
    .btn {
       font-size: 1.4em;
@@ -331,6 +332,11 @@ background-position: right 0px bottom 0px;
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+   .input {
+      text-align: center;
+   }
+   
    .left__wrapper {
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
@@ -374,6 +380,7 @@ background-position: right 0px bottom 0px;
 
    .input {
       font-size: 2rem;
+      padding-bottom: 1rem;
    }
 
    .btn {
