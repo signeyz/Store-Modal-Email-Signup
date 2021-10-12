@@ -14,7 +14,7 @@
 window.onload = function () {
   let mainContainer = document.getElementsByClassName('whole')[0];
 
-  mainContainer.addEventListener('mouseleave', () => {
+  document.body.addEventListener('mouseleave', () => {
     mainContainer.classList.add('whole--visible');
   });
 
