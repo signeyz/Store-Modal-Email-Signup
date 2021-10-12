@@ -1,10 +1,26 @@
-const close = document.querySelector('.close');
-const contain = document.querySelector('.container');
+// const close = document.querySelector('.close');
+// const contain = document.querySelector('.container');
 
-function gone() {
-  contain.classList.add('container-gone');
-  console.log(contain);
-}
+// function gone() {
+//   contain.classList.add('container-gone');
+//   console.log(contain);
+// }
 
-const bye = close.addEventListener('click', gone);
-console.log(bye);
+// const bye = close.addEventListener('click', gone);
+// console.log(bye);
+
+// NEW FADE IN AND OUT
+
+window.onload = function () {
+  let mainContainer = document.getElementsByClassName('whole')[0];
+
+  document.addEventListener('mouseleave', () => {
+    mainContainer.classList.add('whole--visible');
+  });
+
+  let removeModal = document.getElementsByClassName('whole')[0];
+  document.addEventListener('click', () => {
+    removeModal.classList.remove('whole--visible');
+  });
+  console.log(mainContainer);
+};

@@ -198,6 +198,16 @@ SECTIONS & CENTER-SECTIONS
  max-width: 1170px;
 }
 
+.whole {
+   opacity: 0;
+   transition: all .4s ease-in-out;
+}
+
+.whole--visible {
+   opacity: 1;
+   transition: opacity .4s ease-in-out;
+}
+
 .container {
    max-width: 90rem;
    margin: 0 auto;
