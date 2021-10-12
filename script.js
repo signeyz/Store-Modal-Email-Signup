@@ -18,7 +18,7 @@ window.onload = function () {
     mainContainer.classList.add('whole--visible');
   });
 
-  let removeModal = document.getElementsByClassName('whole')[0];
+  let removeModal = document.getElementsByClassName('close-btn')[0];
   removeModal.addEventListener('click', () => {
     mainContainer.classList.remove('whole--visible');
   });
