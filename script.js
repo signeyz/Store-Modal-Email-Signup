@@ -19,8 +19,8 @@ window.onload = function () {
   });
 
   let removeModal = document.getElementsByClassName('whole')[0];
-  document.addEventListener('click', () => {
-    removeModal.classList.remove('whole--visible');
+  removeModal.addEventListener('click', () => {
+    mainContainer.classList.remove('whole--visible');
   });
   console.log(mainContainer);
 };
