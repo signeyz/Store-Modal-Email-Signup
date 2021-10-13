@@ -12,6 +12,8 @@
 // NEW FADE IN AND OUT
 
 window.onload = function () {
+  // let dealButton = document.getElementsByClassName('deal');
+
   let input = document.getElementsByClassName('input')[0];
 
   let inputBtn = document.getElementsByClassName('btn')[0];
@@ -46,6 +48,17 @@ window.onload = function () {
       document.getElementsByClassName('input')[0].classList.add('anim');
       animate();
     }
+  });
+
+  let deals = () => {
+    if (emailState === false) {
+      mainContainer.classList.add('whole--visible');
+      emailState = true;
+    }
+  };
+
+  document.body.addEventListener('click', () => {
+    deals();
   });
 
   let showModal = () => {
