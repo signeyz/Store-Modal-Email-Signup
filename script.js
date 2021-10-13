@@ -12,11 +12,41 @@
 // NEW FADE IN AND OUT
 
 window.onload = function () {
+  let input = document.getElementsByClassName('input')[0];
+
+  let inputBtn = document.getElementsByClassName('btn')[0];
+  console.log(inputBtn);
+  console.log(input);
+
   let section = document.getElementsByClassName('section')[0];
 
   let mainContainer = document.getElementsByClassName('whole')[0];
 
   let emailState = false;
+
+  function emailIsValid(email) {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+
+  function animate() {
+    input.classList.remove('anim');
+    setTimeout(function () {
+      input.classList.add('anim');
+    }, 1);
+  }
+
+  inputBtn.addEventListener('click', () => {
+    if (emailIsValid(emailIsValid.value)) {
+      console.log(emailIsValid.value);
+    } else {
+      console.log('this is not a value email');
+      document
+        .getElementsByClassName('input')[0]
+        .classList.add('input-visible');
+      document.getElementsByClassName('input')[0].classList.add('anim');
+      animate();
+    }
+  });
 
   let showModal = () => {
     if (emailState === false) {

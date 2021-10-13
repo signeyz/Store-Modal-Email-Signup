@@ -181,6 +181,33 @@ input::placeholder {
    padding: 0 .2rem;
 }
 
+/* For Javascript */
+.input-visible {
+border: solid 1px red;
+}
+
+.anim {
+   animation: shake 0.5s;
+   animation-iteration-count: 1;
+}
+
+@keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 /* 
 ==========================
 SECTIONS & CENTER-SECTIONS
@@ -448,6 +475,15 @@ background-position: right 0px bottom 0px;
  }
 }
 
+/* For Javascript */
 .section-gone {
    display: none
 }
+
+/* .error-message {
+   color: red;
+   margin-bottom: .1rem;
+   font-weight: 700;
+   font-size: 1.4rem;
+} */
+
