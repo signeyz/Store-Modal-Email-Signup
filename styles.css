@@ -447,3 +447,7 @@ background-position: right 0px bottom 0px;
    width: 95vw;
  }
 }
+
+.section-gone {
+   display: none
+}
